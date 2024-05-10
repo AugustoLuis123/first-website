@@ -3,7 +3,7 @@ import { footerLogo } from "../assets/images"
 
 const Footer = () => {
   return (
-    <footer className="relative py-8 padding-x bg-dark-gray w-full">
+    <footer className="relative py-8 padding-x bg-black w-full">
       <div className="flex justify-center items-center max-container-no-margin">
           <a>
             <img 

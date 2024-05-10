@@ -1,4 +1,4 @@
-import { Hero, Albums, Aboutus, Footer, Videos, Contact } from "./sections";
+import { Hero, Albums, Aboutus, Footer, Videos, Contact, Marketplace } from "./sections";
 import Nav from './components/Nav';
 
 const App = () => (
@@ -17,6 +17,9 @@ const App = () => (
     </section>
     <section>
       <Videos />
+    </section>
+    <section>
+      <Marketplace />
     </section>
     <section>
       <Contact />

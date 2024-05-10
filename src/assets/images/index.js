@@ -13,12 +13,20 @@ import headerLogo from './header-logo.png'
 import footerLogo from './header-logo.png'
 import about1 from './about1.jpg'
 
+import shirt from './shirt.jpg'
+import digital from './digital.jpg'
+import vinyl from './vinyl.jpg'
+
 
 export {
     hero1,
     headerLogo,
     footerLogo,
     about1,
+
+    shirt,
+    digital,
+    vinyl,
 
     afterhours,
     bbtm,

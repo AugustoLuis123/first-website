@@ -1,6 +1,6 @@
 const Contact = () => {
   return (
-    <section id="contact-us" className="py-20 px-10 bg-black max-container-no-margin flex justify-between items-center max-lg:flex-col gap-10">
+    <section id="contact-us" className="py-20 px-10 bg-dark-gray max-container-no-margin flex justify-between items-center max-lg:flex-col gap-10">
       <div>
         <h2 className="lg:px-20 text-4xl font-nunito font-bold bg-gradient-to-b from-hero1 to-hero3 bg-clip-text text-transparent ">
           Get Updates and Join the XO Community
