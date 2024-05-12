@@ -14,18 +14,20 @@ const Footer = () => {
           </a>
       </div>
       
-      <div className="flex justify-center items-center  gap-10 mt-5">
-          {socialMedia.map((icon) => (
-            <div className="flex justify-center items-center w-12 h-12 bg-white rounded-full">
-              <img 
+      <div className="flex justify-center items-center gap-10 mt-5">
+          {socialMedia.map((icon, index) => (
+            <a href={icon.href} key={index} target="_blank" rel="noopener noreferrer">
+              <div className="flex justify-center items-center w-12 h-12 bg-white rounded-full hover:bg-hero3">
+                <img 
                   src={icon.src}
                   alt={icon.alt}
                   width={20}
                   height={20}
                   className="cursor-pointer"
-              />
-            </div>
-            ))}
+                />
+              </div>
+            </a>
+          ))}
       </div> 
       
       <div className="flex justify-center items-center font-poppins text-white mt-5">

@@ -3,8 +3,8 @@ import { about1 } from '../assets/images';
 const Aboutus = () => {
   return (
     <section className="py-20 px-10 bg-dark-gray max-container-no-margin">
-      <div className="flex justify-between items-center max-lg:flex-col gap-10 w-full max-container mx-auto">
-        <div className="flex-1 flex justify-center items-center">
+      <div className="flex items-center max-lg:flex-col gap-10">
+        <div className="flex-1 flex justify-center">
         <img 
               src={about1}
               width={"400px"}
