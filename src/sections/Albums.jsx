@@ -5,6 +5,8 @@ import { ChevronLeft, ChevronRight } from 'react-feather';
 const Albums = () => {
   const [currentAlbumIndex, setCurrentAlbumIndex] = useState(0);
 
+  const albumNameColors = ['#f4f4f4', '#d74c39', '#a61e22', '#40df90', '#f4e12f', '#d8052c', '#b0451b', '#c3290b', '#4a8397'];
+
   const nextAlbum = () => {
     setCurrentAlbumIndex((prevIndex) => (prevIndex === albums.length - 1 ? 0 : prevIndex + 1));
   };
@@ -23,22 +25,20 @@ const Albums = () => {
       </div>
 
       <div className="flex flex-col sm:flex-row gap-5">
-      <div className="flex-1 w-full">
-        <div className="flex justify-center relative">
-          <button onClick={prevAlbum} className="absolute left-0 top-1/2 transform -translate-y-1/2 p-1 rounded-full shadow bg-white/60 text-gray-800 hover:bg-white">
-        <ChevronLeft size={30} />
-          </button>
+        <div className="flex-1 w-full ">
+          <div className="flex justify-center relative">
+            <button onClick={prevAlbum} className="absolute left-0 top-1/2 transform -translate-y-1/2 p-1 rounded-full shadow bg-white/60 text-gray-800 hover:bg-white">
+              <ChevronLeft size={30} />
+            </button>
             <img src={albums[currentAlbumIndex].imgURL} alt={albums[currentAlbumIndex].name} className="rounded-md lg:max-w-lg h-auto"/>
-          <button onClick={nextAlbum} className="absolute right-0 top-1/2 transform -translate-y-1/2 p-1 rounded-full shadow bg-white/60 text-gray-800 hover:bg-white">
-        <ChevronRight size={30} />
-          </button>
+            <button onClick={nextAlbum} className="absolute right-0 top-1/2 transform -translate-y-1/2 p-1 rounded-full shadow bg-white/60 text-gray-800 hover:bg-white">
+              <ChevronRight size={30} />
+            </button>
+          </div>
         </div>
-      </div>
 
-      
-
-        <div className="flex-1 w-full text-center">
-          <h2 className="text-3xl font-poppins font-bold bg-gradient-to-b from-purple-600 to-fuchsia-800 bg-clip-text text-transparent">{albums[currentAlbumIndex].name}</h2>
+        <div className="flex-1 w-full text-center md:text-left md:pl-20">
+          <h2 className="text-3xl font-poppins font-bold" style={{ color: albumNameColors[currentAlbumIndex] }}>{albums[currentAlbumIndex].name}</h2>
           <p className="text-lg text-white font-poppins">{albums[currentAlbumIndex].date}</p>
           <h3 className="mt-4 mb-2 text-lg font-montserrat font-bold bg-gradient-to-b from-hero1 to-hero3 bg-clip-text text-transparent">Tracklist:</h3>
           <ul>
@@ -46,7 +46,6 @@ const Albums = () => {
               <li className="text-white font-nunito py-[2px]" key={index}>{track}</li>
             ))}
           </ul>
-
         </div>
       </div>
     </section>

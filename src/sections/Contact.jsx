@@ -12,7 +12,7 @@ const Contact = () => {
         placeholder="example@email.com"
         className="input bg-transparent text-white"/>
         <div className="flex max-sm:justify-end items-center max-sm:w-full">
-        <a href="/" className="bg-hero3 border-hero3 px-7 py-4 border text-white text-md text-center font-poppins font-bold rounded-full hover:bg-hero2 hover:border-hero2 transition duration-300 ease-in-out w-full">
+        <a href="/" className="bg-hero3 border-hero3 px-7 py-4 border text-white text-md text-center font-poppins font-bold rounded-full hover:bg-hero2 hover:border-hero2 transition duration-200 ease-in-out w-full">
             Sign Up
           </a>
         </div>

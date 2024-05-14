@@ -17,7 +17,7 @@ const Marketplace = () => {
         <div class="flex-shrink-0 relative">
           <img class="h-80 w-full object-cover" src={shirt} alt="shirt"/>
         <a class="absolute inset-0  flex items-center justify-center bg-black opacity-0 hover:opacity-50 cursor-pointer">
-            <p class="text-hero2 text-2xl font-poppins font-bold">Explore</p>
+            <p class="text-red-700 text-2xl font-poppins font-bold border-2 border-hero1 p-1">Explore</p>
         </a>
         </div>
         <div class="flex flex-1 flex-col justify-between bg-dark-gray p-6">
@@ -38,7 +38,7 @@ const Marketplace = () => {
         <div class="flex-shrink-0 relative">
             <img class="h-80 w-full object-cover" src={digital} alt="digital"/>
         <a class="absolute inset-0  flex items-center justify-center bg-black opacity-0 hover:opacity-50 cursor-pointer">
-            <p class="text-hero2 text-2xl font-poppins font-bold">Explore</p>
+            <p class="text-red-700 text-2xl font-poppins font-bold border-2 border-hero1 p-1">Explore</p>
         </a>
         </div>
         <div class="flex flex-1 flex-col justify-between bg-dark-gray p-6">
@@ -59,8 +59,8 @@ const Marketplace = () => {
       <div class="flex flex-col overflow-hidden rounded-lg shadow-lg">
         <div class="flex-shrink-0 relative">
           <img class="h-80 w-full object-cover" src={vinyl} alt="vinyl"/>
-        <a class="absolute inset-0  flex items-center justify-center bg-black opacity-0 hover:opacity-50 cursor-pointer">
-            <p class="text-hero2 text-2xl font-poppins font-bold">Explore</p>
+        <a class="absolute inset-0  flex items-center justify-center bg-dark-gray opacity-0 hover:opacity-50 cursor-pointer">
+            <p class="text-red-700 text-2xl font-poppins font-bold border-2 border-hero1 p-1">Explore</p>
         </a>
         </div>
         <div class="flex flex-1 flex-col justify-between bg-dark-gray p-6">
