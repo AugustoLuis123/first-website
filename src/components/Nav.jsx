@@ -2,7 +2,7 @@ import { headerLogo } from '../assets/images';
 
 const Nav = () => {
   return (
-    <header className="padding-x py-5 relative z-30 w-full bg-dark-gray">
+    <header className="padding-x py-5 relative z-30 w-full bg-dark-gray" >
       <nav className="flex justify-between items-center max-container">
         <a href="/" >
           <img src={headerLogo}

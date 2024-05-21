@@ -17,7 +17,7 @@ const Albums = () => {
 
   return (
     <section id="albums" className="bg-black py-20 px-10 max-container-no-margin">
-      <div>
+      <div data-aos="fade-up">
         <h2 className="lg:px-20 text-4xl font-nunito font-bold bg-gradient-to-b from-hero1 to-hero3 bg-clip-text text-transparent">Albums</h2>
         <p className="pb-10 lg:px-20 text-lg text-white-400 font-poppins text-justify leading-relaxed">
           Explore The Weeknd's musical journey through a curated collection of his iconic albums. Dive into his discography and experience the sounds that have captivated audiences worldwide.
@@ -25,19 +25,19 @@ const Albums = () => {
       </div>
 
       <div className="flex flex-col sm:flex-row gap-5">
-        <div className="flex-1 w-full ">
-          <div className="flex justify-center relative">
+        <div className="flex-1 w-full">
+          <div className="flex justify-center relative" data-aos="zoom-in">
             <button onClick={prevAlbum} className="absolute left-0 top-1/2 transform -translate-y-1/2 p-1 rounded-full shadow bg-white/60 text-gray-800 hover:bg-white">
               <ChevronLeft size={30} />
             </button>
-            <img src={albums[currentAlbumIndex].imgURL} alt={albums[currentAlbumIndex].name} className="rounded-md lg:max-w-lg h-auto"/>
+            <img src={albums[currentAlbumIndex].imgURL} alt={albums[currentAlbumIndex].name} className="rounded-md lg:max-w-lg h-auto" />
             <button onClick={nextAlbum} className="absolute right-0 top-1/2 transform -translate-y-1/2 p-1 rounded-full shadow bg-white/60 text-gray-800 hover:bg-white">
               <ChevronRight size={30} />
             </button>
           </div>
         </div>
 
-        <div className="flex-1 w-full text-center md:text-left md:pl-20">
+        <div className="flex-1 w-full text-center md:text-left md:pl-20" data-aos="fade-up">
           <h2 className="text-3xl font-poppins font-bold" style={{ color: albumNameColors[currentAlbumIndex] }}>{albums[currentAlbumIndex].name}</h2>
           <p className="text-lg text-white font-poppins">{albums[currentAlbumIndex].date}</p>
           <h3 className="mt-4 mb-2 text-lg font-montserrat font-bold bg-gradient-to-b from-hero1 to-hero3 bg-clip-text text-transparent">Tracklist:</h3>

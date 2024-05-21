@@ -10,11 +10,12 @@ const Aboutus = () => {
               width={"400px"}
               height={"400px"} 
               alt="about-theweeknd"
-              className="rounded-lg" 
+              className="rounded-lg"
+              data-aos="zoom-in" 
         />
         </div>
                 
-        <div className="flex flex-1 flex-col">
+        <div className="flex flex-1 flex-col" data-aos="fade-up">
         <h2 className="text-4xl font-nunito font-bold bg-gradient-to-b from-hero1 to-hero3 bg-clip-text text-transparent">About</h2>
         <p className="text-lg lg:max-w-lg text-white-400 font-poppins text-justify leading-relaxed">
           Abel Makkonen Tesfaye, known as the Weeknd, is a Canadian singer-songwriter. Tesfaye began releasing music in 2009. The Weeknd has solidified his status as one of the most influential figures in contemporary pop and R&B music.

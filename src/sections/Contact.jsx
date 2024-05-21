@@ -1,13 +1,13 @@
 const Contact = () => {
   return (
     <section id="contact-us" className="py-20 px-10 bg-dark-gray max-container-no-margin flex justify-between items-center max-lg:flex-col gap-10">
-      <div>
+      <div data-aos="fade-up">
         <h2 className="lg:px-20 text-4xl font-nunito font-bold bg-gradient-to-b from-hero1 to-hero3 bg-clip-text text-transparent ">
           Get Updates and Join the XO Community
         </h2>
       </div>
       
-      <div className="lg:max-w-[40%] w-full flex items-center max-sm:flex-col gap-5 p-2.5 sm:border sm:border-white rounded-full">
+      <div className="lg:max-w-[40%] w-full flex items-center max-sm:flex-col gap-5 p-2.5 sm:border sm:border-white rounded-full" data-aos="fade-up">
         <input type="text"
         placeholder="example@email.com"
         className="input bg-transparent text-white"/>

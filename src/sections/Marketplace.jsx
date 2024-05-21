@@ -3,7 +3,7 @@ import { digital, shirt, vinyl } from "../assets/images"
 const Marketplace = () => {
   return (
     <section id="marketplace" className="relative bg-black py-20 px-10 lg:px-8 lg:pt-24 lg:pb-28">
-    <div>
+    <div data-aos="fade-up">
     <h2 className="lg:px-20 text-4xl font-nunito font-bold bg-gradient-to-b from-hero1 to-hero3 bg-clip-text text-transparent">Shop</h2>
     </div>
 
@@ -13,7 +13,7 @@ const Marketplace = () => {
   <div class="relative mx-auto max-w-7xl">
     <div class="mx-auto mt-12 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-3">
 
-      <div class="flex flex-col overflow-hidden rounded-lg shadow-lg">
+      <div class="flex flex-col overflow-hidden rounded-lg shadow-lg" data-aos="fade-up">
         <div class="flex-shrink-0 relative">
           <img class="h-80 w-full object-cover" src={shirt} alt="shirt"/>
         <a class="absolute inset-0  flex items-center justify-center bg-black opacity-0 hover:opacity-50 cursor-pointer">
@@ -34,7 +34,7 @@ const Marketplace = () => {
         </div>
       </div>
 
-      <div class="flex flex-col overflow-hidden rounded-lg shadow-lg">
+      <div class="flex flex-col overflow-hidden rounded-lg shadow-lg" data-aos="fade-up">
         <div class="flex-shrink-0 relative">
             <img class="h-80 w-full object-cover" src={digital} alt="digital"/>
         <a class="absolute inset-0  flex items-center justify-center bg-black opacity-0 hover:opacity-50 cursor-pointer">
@@ -56,7 +56,7 @@ const Marketplace = () => {
     </div>
 
 
-      <div class="flex flex-col overflow-hidden rounded-lg shadow-lg">
+      <div class="flex flex-col overflow-hidden rounded-lg shadow-lg" data-aos="fade-up">
         <div class="flex-shrink-0 relative">
           <img class="h-80 w-full object-cover" src={vinyl} alt="vinyl"/>
         <a class="absolute inset-0  flex items-center justify-center bg-dark-gray opacity-0 hover:opacity-50 cursor-pointer">
